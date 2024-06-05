@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pixi/loaders": "^6.5.10",
+    "@vueuse/core": "^10.10.0",
     "axios": "^1.7.2",
     "pinia": "^2.1.7",
-    "pixi-spine": "^4.0.4",
     "pixi.js": "^8.1.5",
     "primevue": "^3.52.0",
     "sass": "^1.77.2",
