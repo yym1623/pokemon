@@ -129,7 +129,15 @@
 	"sourceSize": {"w":28,"h":38}
 }},
 "animations": {
-	"character": ["character-0.png","character-1.png","character-2.png","character-3.png","character-4.png","character-5.png","character-6.png","character-7.png","character-8.png","character-9.png","character-10.png","character-11.png","character-12.png","character-13.png","character-14.png","character-15.png"]
+	"character": ["character-0.png","character-1.png","character-2.png","character-3.png","character-4.png","character-5.png","character-6.png","character-7.png","character-8.png","character-9.png","character-10.png","character-11.png","character-12.png","character-13.png","character-14.png","character-15.png"],
+	"bottomStop": ["character-0.png","character-3.png"],
+	"bottom": ["character-1.png","character-2.png"],
+	"leftStop": ["character-4.png","character-6.png"],
+	"left": ["character-5.png","character-7.png"],
+	"rightStop": ["character-8.png", "character-10.png"],
+	"right": ["character-9.png","character-11.png"],
+	"topStop": ["character-12.png","character-14.png"],
+	"top": ["character-13.png","character-15.png"]
 },
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
