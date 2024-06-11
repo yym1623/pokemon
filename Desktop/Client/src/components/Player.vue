@@ -23,6 +23,8 @@ const playerY = ref(430);
 
 let playerStop = ref();
 
+// tt
+
 const playerWidth = props.mapWidth / 26;
 const playerHeight = props.mapHeight / 20;
 
