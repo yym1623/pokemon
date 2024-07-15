@@ -18,12 +18,10 @@ const play = ref(true);
 let playerMapX = ref(props.playerMapX)
 let playerMapY = ref(props.playerMapY)
 
-const playerX = ref(905);
-const playerY = ref(430);
+const playerX = ref(400);
+const playerY = ref(50);
 
 let playerStop = ref();
-
-// tt
 
 const playerWidth = props.mapWidth / 26;
 const playerHeight = props.mapHeight / 20;
@@ -47,25 +45,25 @@ function onKeyDown(key : KeyboardEvent) {
   // Up arrow - 87
   if (key.keyCode === 87 || key.keyCode === 38) {
     // 위로 이동
-    if (playerY.value - 280 > playerHeight) {
+    if (playerY.value - 10 > playerHeight) {
       // map의 상단끝이 아닐 경우
       playerY.value-= playerHeight;
       resource.animation = resource.spritesheet!.animations['top']
       playerStop.value = 'topStop'
       playerMapY.value -= 0.03;
-      emit("mapPositionChange", playerMapX.value, playerMapY.value);
+      // emit("mapPositionChange", playerMapX.value, playerMapY.value);
     }
   }
   // S - 83
   // Down arrow - 40
   if (key.keyCode === 83 || key.keyCode === 40) {
     // 아래로 이동
-    if (playerY.value + 250 < props.mapHeight - playerHeight) {
+    if (playerY.value + 110 < props.mapHeight - playerHeight) {
         // map의 하단끝이 아닐 경우
         playerY.value += playerHeight;
         resource.animation = resource.spritesheet!.animations['bottom']
         playerStop.value = 'bottomStop'
-        // playerMapY.value += 0.03;
+        playerMapY.value += 0.03;
         // emit("mapPositionChange", playerMapX.value, playerMapY.value);
     }
   }
@@ -73,26 +71,31 @@ function onKeyDown(key : KeyboardEvent) {
   // Left arrow - 37
   if (key.keyCode === 65 || key.keyCode === 37) {
     // 좌측 이동
-    if (playerX.value + 50 > playerWidth) {
+    console.log('플레이어 좌측1', playerWidth) // 21
+    console.log('플레이어 좌측2', playerX.value) // 400
+    if (playerX.value > playerWidth) {
         // map의 좌족끝이 아닐 경우
         playerX.value -= playerWidth;
         resource.animation = resource.spritesheet!.animations['left']
         playerStop.value = 'leftStop'
-        playerMapX.value -= 0.03;
-        emit("mapPositionChange", playerMapX.value, playerMapY.value);
+        playerMapX.value += 0.03;
+        // emit("mapPositionChange", playerMapX.value, playerMapY.value);
     }
   }
   // D - 68
   // Right arrow - 39
   if (key.keyCode === 68 || key.keyCode === 39) {
     // 우측 이동
-    if (playerX.value + 500 < props.mapWidth - playerWidth) {
+    console.log('우측1', playerX.value) // 400
+    console.log('우측2', props.mapWidth) // 560
+    console.log('우측3', playerWidth) // 21 -> // 540
+    if (playerX.value + 50 < props.mapWidth - playerWidth) {
         // map의 우측끝이 아닐 경우
         playerX.value += playerWidth;
         resource.animation = resource.spritesheet!.animations['right']
         playerStop.value = 'rightStop'
         playerMapX.value += 0.03;
-        emit("mapPositionChange", playerMapX.value, playerMapY.value)
+        // emit("mapPositionChange", playerMapX.value, playerMapY.value)
       }
     }
     play.value = true;
@@ -130,7 +133,7 @@ function onKeyDown(key : KeyboardEvent) {
       :animation-speed="0.1"
       :x="playerX"
       :y="playerY"
-      :scale="3"
+      :scale="2"
       :playing="play"
     />
   </Loader>

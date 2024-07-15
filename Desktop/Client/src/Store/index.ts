@@ -1,18 +1,17 @@
-// stores/counter.js
-import { defineStore } from 'pinia';
+import { ref, computed } from 'vue'
+import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('count', {
-  // 초기 상태 지정
-  state: () => {
-    return { count: 1 };
-  },
-  getters: {
-    doubleCount: state => state.count * 2,
-  },
-  // 액션 함수 지정
-  actions: {
-    increment() {
-      this.count++;
-    },
-  },
-});
+
+export const useCounterStore = defineStore('counter', () => {
+  // pinia state -> data
+  let count = ref(0)
+  // pinia getters -> computed
+  const doubleCount = computed(() : number => count.value * 2)
+  // pinia actions -> methods
+  function increment() {
+    count.value++
+  }
+  
+
+  return { count, doubleCount, increment }
+})
