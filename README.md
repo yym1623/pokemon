@@ -1,8 +1,8 @@
 # pokemon
 ![vue](https://img.shields.io/badge/Vue3-4FC08D)
-![nextjs](https://img.shields.io/badge/nextjs-646CFF)
-![vite](https://img.shields.io/badge/vite-4FC08D)
 ![typescript](https://img.shields.io/badge/typescript-339933)
+![nextjs](https://img.shields.io/badge/nextjs-3267a8)
+![vite](https://img.shields.io/badge/vite-5132a8)
 <br />
 pokemon 2D Game ([DEMO]())
 
