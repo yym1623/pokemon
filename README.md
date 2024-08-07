@@ -1,9 +1,8 @@
 # pokemon
 ![vue](https://img.shields.io/badge/Vue3-4FC08D)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Ionic](https://img.shields.io/badge/Ionic-%233880FF.svg?style=for-the-badge&logo=Ionic&logoColor=white)
-![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)
+![nextjs](https://img.shields.io/badge/nextjs-646CFF)
+![vite](https://img.shields.io/badge/vite-4FC08D)
+![typescript](https://img.shields.io/badge/typescript-339933)
 <br />
 pokemon 2D Game ([DEMO]())
 
