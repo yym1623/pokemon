@@ -3,6 +3,8 @@
 ![typescript](https://img.shields.io/badge/typescript-3267a8)
 ![vite](https://img.shields.io/badge/vite-5132a8)
 ![nextjs](https://img.shields.io/badge/nextjs-000000)
+![ionic](https://img.shields.io/badge/ionic-328da8)
+![elctron](https://img.shields.io/badge/elctron-3265a8)
 <br />
 pokemon 2D Game ([DEMO]())
 
