@@ -10,7 +10,7 @@ pokemon 2D Game ([DEMO]())
 
 ![image]()
 
-토이 프로젝트(FrontEnd - 윤영민)
+토이 프로젝트(FrontEnd - 윤영민, BackEnd - 윤영민)
 
 프로젝트 기간 : (2024.06 ~ now)
 
